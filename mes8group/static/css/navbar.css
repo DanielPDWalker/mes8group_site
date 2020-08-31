@@ -1,0 +1,16 @@
+.navbar-expand-lg{
+    background-color: #2c2929;
+}
+
+.navbar-expand-lg a{
+    color:  #fcfcf3;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-expand-lg a:active{
+    color: #9c9c9c;
+}
+
+.navbar-expand-lg a:hover{
+    color: #999999;
+}
