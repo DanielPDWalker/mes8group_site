@@ -1,22 +1,26 @@
 ul.navbar{
-    background-color: #2c2929;
-
+    background-color: #1d1d1d;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 ul.navbar li{
-    display: inline;
-    list-style-type: none;
+    float: left;
+    font-size: 18px;
 }
 
 ul.navbar a{
     color:  #fcfcf3;
     font-family: 'Lato', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
     display: block;
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
-ul.navbar a:active{
+ul.navbar a.active{
     color: #9c9c9c;
 }
 
@@ -24,6 +28,12 @@ ul.navbar a:hover{
     color: #999999;
 }
 
-li{
-    font-size: 55px;
+#brand-title {
+    font-size: 28px;
+    border: 1px solid #fcfcf3;
+    padding : 3px;
+}
+
+li.navbar-item{
+    padding-top: 6px;
 }

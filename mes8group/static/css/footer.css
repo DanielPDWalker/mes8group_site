@@ -1,0 +1,20 @@
+ul.footer_list{
+    list-style-type: none;
+    background-color:  #1d1d1d;
+    border-top: 2px solid #fcfcf3;
+}
+
+ul.footer_list a{
+    color:  #fcfcf3;
+    font-family: 'Lato', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.footer_list a.active{
+    color: #9c9c9c;
+}
+
+ul.footer_list a:hover{
+    color: #999999;
+}

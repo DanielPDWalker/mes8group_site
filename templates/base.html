@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 
     <!-- Custom Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
@@ -33,11 +35,18 @@
             </div>
             <div class="col-8">
             {% block content %} {% endblock %}
+            
             </div>
             <div class="col-2 outer-column">
             
             </div>
-      </div>
+        </div>
+      
+        <!-- Footer Section -->
+        {% include 'partials/_footer.html' %}
+        
+
+    </div>
     
   </body>
 </html>
