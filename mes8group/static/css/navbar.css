@@ -1,16 +1,39 @@
-.navbar-expand-lg{
+ul.navbar{
     background-color: #2c2929;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.navbar-expand-lg a{
+ul.navbar li{
+    float: left;
+    font-size: 18px;
+}
+
+ul.navbar a{
     color:  #fcfcf3;
     font-family: 'Lato', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
-.navbar-expand-lg a:active{
+ul.navbar a.active{
     color: #9c9c9c;
 }
 
-.navbar-expand-lg a:hover{
+ul.navbar a:hover{
     color: #999999;
+}
+
+#brand-title {
+    font-size: 28px;
+    border: 1px solid #fcfcf3;
+    padding : 3px;
+}
+
+li.navbar-item{
+    padding-top: 6px;
 }

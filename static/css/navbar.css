@@ -1,0 +1,29 @@
+ul.navbar{
+    background-color: #2c2929;
+
+}
+
+ul.navbar li{
+    display: inline;
+    list-style-type: none;
+}
+
+ul.navbar a{
+    color:  #fcfcf3;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar a:active{
+    color: #9c9c9c;
+}
+
+ul.navbar a:hover{
+    color: #999999;
+}
+
+li{
+    font-size: 55px;
+}
