@@ -5,12 +5,11 @@ body{
 }
 
 h2#title{
-    padding-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     padding-left: 2rem;
     text-align: center;
-    font-size: 12px;
-}
-
-div#side_column{
-    background-color: crimson;
+    font-size: 86px;
+    border-top: 2px solid #fcfcf3;
+    border-bottom: 2px solid #fcfcf3;
 }
