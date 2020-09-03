@@ -21,7 +21,7 @@ class WritingModel (models.Model):
     snippet = models.TextField(blank=False)
     content= models.TextField(blank=False)
 
-    thumbnail = models.ImageField()
+    thumbnail = models.ImageField(upload_to='media/', default='media/tb.jpg')
 
     tags = models.CharField(max_length=200)
     feature_slot = models.OneToOneField(FeatureSlotModel, on_delete= models.DO_NOTHING, default=None)
