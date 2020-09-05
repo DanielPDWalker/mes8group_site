@@ -14,7 +14,7 @@ class WritingModel (models.Model):
     genre = models.CharField(max_length=100)
     subgenre = models.CharField(max_length=100)
 
-    slug = models.SlugField(max_length=100)
+    slug = models.SlugField(max_length=100, unique=True)
     publish_date = models.DateTimeField(default=datetime.now, blank=True)
     owner = models.CharField(max_length=50)
 
