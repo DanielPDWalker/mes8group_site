@@ -20,21 +20,17 @@ ul.navbar a{
     text-align: center;
 }
 
-ul.navbar a.active{
-    color: #9c9c9c;
-}
-
 ul.navbar a:hover{
     color: #999999;
 }
 
 #brand-title {
     font-size: 28px;
-    padding : 3px;
 }
 
 #active{
     border: 1px solid #fcfcf3;
+    padding: 3px;
 }
 
 li.navbar-item{
