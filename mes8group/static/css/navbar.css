@@ -30,8 +30,11 @@ ul.navbar a:hover{
 
 #brand-title {
     font-size: 28px;
-    border: 1px solid #fcfcf3;
     padding : 3px;
+}
+
+#active{
+    border: 1px solid #fcfcf3;
 }
 
 li.navbar-item{
