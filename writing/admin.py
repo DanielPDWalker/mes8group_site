@@ -4,9 +4,9 @@ from .models import WritingModel
 
 
 class WritingModelAdmin(admin.ModelAdmin):
-    list_display = ('title', 'category', 'genre', 'owner', 'tags', 'feature_slot')
-    list_display_links = ('title')
-    list_filter = ('author',)
+    list_display = ('title', 'category', 'genre', 'owner', 'feature_slot', 'is_published', 'tags')
+    list_display_links = ('title',)
+    list_filter = ('owner',)
     list_editable = ('is_published',)
     search_fields = ('title', 'content', 'author')
     list_per_page = 10
