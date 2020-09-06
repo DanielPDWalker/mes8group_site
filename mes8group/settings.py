@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'video',
     'voice_acting',
     'writing',
+    'general_models',
     'crispy_forms'
 ]
 
