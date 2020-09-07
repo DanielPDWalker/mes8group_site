@@ -1,8 +1,6 @@
 from django.db import models
 from datetime import datetime
 
-from general_models.models import FeatureSlotModel
-
 
 class WritingModel (models.Model):
     title = models.CharField(max_length=150)
@@ -22,9 +20,9 @@ class WritingModel (models.Model):
     thumbnail = models.ImageField(upload_to='media/', default='media/default_thumbnail.jpg')
 
     tags = models.CharField(max_length=200)
-    feature_slot = models.OneToOneField(FeatureSlotModel, on_delete= models.DO_NOTHING, default=None)
+    feature_slot = models.IntegerField(blank=True, unique=True, null=True)
 
-    is_published = models.BooleanField()
+    is_published = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
