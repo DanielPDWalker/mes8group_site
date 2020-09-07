@@ -2,10 +2,6 @@ from django.db import models
 from datetime import datetime
 
 
-class FeatureSlotModel(models.Model):
-    slot_number = models.IntegerField()
-
-
 class WritingModel (models.Model):
     title = models.CharField(max_length=150)
     short_title = models.CharField(max_length=100)
@@ -19,12 +15,14 @@ class WritingModel (models.Model):
     owner = models.CharField(max_length=50)
 
     snippet = models.TextField(blank=False)
-    content= models.TextField(blank=False)
+    content = models.TextField(blank=False)
 
-    thumbnail = models.ImageField(upload_to='media/', default='media/tb.jpg')
+    thumbnail = models.ImageField(upload_to='media/', default='media/default_thumbnail.jpg')
 
     tags = models.CharField(max_length=200)
-    feature_slot = models.OneToOneField(FeatureSlotModel, on_delete= models.DO_NOTHING, default=None)
+    feature_slot = models.IntegerField(blank=True, unique=True, null=True)
+
+    is_published = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
