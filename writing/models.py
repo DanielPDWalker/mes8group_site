@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 class WritingModel (models.Model):
-    title = models.CharField(max_length=150)
+    title = models.CharField(max_length=150, unique=True)
     short_title = models.CharField(max_length=100)
 
     category = models.CharField(max_length=100, default="writing")
