@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'video',
     'voice_acting',
     'writing',
+    'general_models',
     'crispy_forms'
 ]
 
@@ -123,7 +124,7 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-CRISPY_TEMPLATE_PACK="bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 USE_TZ = False
 
