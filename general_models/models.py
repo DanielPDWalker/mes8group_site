@@ -17,7 +17,7 @@ class GeneralModel (models.Model):
     snippet = models.TextField(blank=False)
     content = models.TextField(blank=False)
 
-    thumbnail = models.ImageField(upload_to='media/', default='media/default_thumbnail.jpg')
+    thumbnail = models.ImageField(upload_to='thumbnails/', default='default_thumbnail.jpg')
 
     tags = models.CharField(max_length=200)
     feature_slot = models.IntegerField(blank=True, unique=True, null=True)

@@ -1,11 +1,6 @@
-div#footer_container{
-    
-    
-}
-
 ul.footer_list{
     list-style-type: none;
-    background-color: #2c2929;
+    background-color:  #1d1d1d;
     border-top: 2px solid #fcfcf3;
 }
 
