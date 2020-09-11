@@ -4,7 +4,7 @@ from datetime import datetime
 
 class GeneralModel (models.Model):
     title = models.CharField(max_length=150)
-    short_title = models.CharField(max_length=100)
+    short_title = models.CharField(max_length=50)
 
     category = models.CharField(max_length=100)
     genre = models.CharField(max_length=100)
@@ -20,7 +20,8 @@ class GeneralModel (models.Model):
     thumbnail = models.ImageField(upload_to='thumbnails/', default='default_thumbnail.jpg')
 
     tags = models.CharField(max_length=200)
-    feature_slot = models.IntegerField(blank=True, unique=True, null=True)
+    frontpage_feature_slot = models.IntegerField(blank=True, unique=True, null=True)
+    category_feature_slot = models.BooleanField(default=False)
 
     is_published = models.BooleanField(default=False)
 
