@@ -15,7 +15,7 @@ h2#title{
 }
 
 .general_post_title{
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     margin-bottom: -0.25rem;
     color: #ffffe0;
 }
@@ -31,7 +31,7 @@ h2#title{
     border-radius: 4px;
     padding: 1px;
     width: 80px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     margin-left: 5px;
     margin-right: 0.5rem;
     margin-top:0.75rem;
