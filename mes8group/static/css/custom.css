@@ -13,9 +13,16 @@ h2#title{
     border-top: 2px solid #fcfcf3;
     border-bottom: 2px solid #fcfcf3;
 }
+
 .general_post_title{
     margin-top: 0.5rem;
+    margin-bottom: -0.25rem;
     color: #ffffe0;
+}
+
+.general_post_tags{
+    padding-left: 0.5rem;
+    font-size: 14px;
 }
 
 .general_post_thumbnail{
@@ -30,6 +37,7 @@ h2#title{
 }
 
 .general_post_snippet{
+    margin-top: -0.25rem;
     margin-bottom: 0.5rem;
 }
 
