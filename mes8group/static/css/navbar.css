@@ -21,7 +21,7 @@ ul.navbar a{
 }
 
 ul.navbar a:hover{
-    color: #999999;
+    color: #646262;
 }
 
 #brand-title {
@@ -31,6 +31,19 @@ ul.navbar a:hover{
 #active{
     border: 1px solid #fcfcf3;
     padding: 3px;
+}
+
+li.disabled{
+    text-decoration: line-through;
+    
+}
+
+li.disabled a{
+    color: #646262
+}
+
+li.disabled a:hover{
+    color: #646262;
 }
 
 li.navbar-item{
