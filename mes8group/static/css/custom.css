@@ -21,9 +21,8 @@ h2#title{
 }
 
 .general_post_tags{
-    padding-left: 0.5rem;
     font-size: 14px;
-    padding-left: 5.5rem;
+    padding-left: 6rem;
 }
 
 .general_post_thumbnail{
@@ -39,12 +38,14 @@ h2#title{
 }
 
 .general_post_snippet{
-    padding-top: 0rem;
+    padding-top: -0.5rem;
 }
 
 .general_post_date{
     font-size: 20px;
-    padding-right: 1.4rem;
+    padding-right: 1rem;
+    padding-left: 0.75rem;
+    vertical-align: text-top;
 }
 
 .hr_post_splitter{
