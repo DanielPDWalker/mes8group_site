@@ -10,35 +10,42 @@ h2#title{
     padding-left: 2rem;
     text-align: center;
     font-size: 86px;
-    border-top: 2px solid #fcfcf3;
-    border-bottom: 2px solid #fcfcf3;
+    border-top: 2px solid #ffffe0;
+    border-bottom: 2px solid #ffffe0;
 }
 
 .general_post_title{
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     margin-bottom: -0.25rem;
     color: #ffffe0;
 }
 
 .general_post_tags{
-    padding-left: 0.5rem;
     font-size: 14px;
+    padding-left: 6rem;
 }
 
 .general_post_thumbnail{
     border: 1px solid #98f9e8;
     border-radius: 4px;
     padding: 1px;
-    width: 150px;
-    margin-bottom: 1.5rem;
+    width: 80px;
+    margin-bottom: 3rem;
     margin-left: 5px;
     margin-right: 0.5rem;
+    margin-top:0.75rem;
     float: left;
 }
 
 .general_post_snippet{
-    margin-top: -0.25rem;
-    margin-bottom: 0.5rem;
+    padding-top: -0.5rem;
+}
+
+.general_post_date{
+    font-size: 20px;
+    padding-right: 1rem;
+    padding-left: 0.75rem;
+    vertical-align: text-top;
 }
 
 .hr_post_splitter{

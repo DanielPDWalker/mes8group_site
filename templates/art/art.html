@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+    {% for post in posts %}
+      {% include 'partials/_general_post.html' %}
+    {% endfor %}
+    {% include 'partials/_pagination.html' %}
+</div>
+{% endblock %}

@@ -1,6 +1,6 @@
 <div class="container">
     <div class="feature-display">
-        <h2 class="general_post_title">{{ post.short_title }}</h2>
+        <h2 class="general_post_title"><span class="general_post_date">{{ post.publish_date|date:"d/M" }}</span>{{ post.short_title }}</h2><span></span>
         <span class="general_post_tags">{{ post.tags }}</span>
         <br>
         <img class="general_post_thumbnail" src="{{ post.thumbnail.url }}">

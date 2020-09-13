@@ -14,7 +14,7 @@ class GeneralModel (models.Model):
     publish_date = models.DateTimeField(default=datetime.now, blank=True)
     owner = models.CharField(max_length=50)
 
-    snippet = models.TextField(blank=False, max_length=300)
+    snippet = models.TextField(blank=False, max_length=250)
     content = models.TextField(blank=False)
 
     thumbnail = models.ImageField(upload_to='thumbnails/', default='default_thumbnail.jpg')

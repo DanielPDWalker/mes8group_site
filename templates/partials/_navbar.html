@@ -1,11 +1,11 @@
 <div class="container">
   <ul class="navbar">
     <li><a href="{% url 'index' %}" id="brand-title">Mes8Group</a></li>
-    <li class="navbar-item"><a href="">Art</a></li>
-    <li class="navbar-item"><a href=""><s>Blog</s></a></li>
-    <li class="navbar-item"><a href=""><s>Music</s></a></li>
-    <li class="navbar-item"><a href=""><s>Videos</s></a></li>
-    <li class="navbar-item"><a href=""><s>Voice Acting</s></a></li>
+    <li class="navbar-item"><a href="{% url 'art_home' %}">Art</a></li>
+    <li class="navbar-item disabled"><a href="">Blog</a></li>
+    <li class="navbar-item disabled"><a href="">Music</a></li>
+    <li class="navbar-item disabled"><a href="">Videos</a></li>
+    <li class="navbar-item disabled"><a href="">Voice Acting</a></li>
     <li class="navbar-item" ><a href="{% url 'writing_home' %}" >Writing</a></li>
   </ul>
 </div>
