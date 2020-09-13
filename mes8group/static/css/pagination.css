@@ -1,7 +1,7 @@
 .page-link{
-    background-color: #98f9e8;
-    border: 1px solid #98f9e8;
-    color: #292c29;
+    background-color: #292c29;
+    border: 1px solid #ffffe0;
+    color: #ffffe0;
 }
 
 .page-item{
@@ -16,12 +16,12 @@
 }
 
 .page-item.disabled a.page-link{
-    background-color: #98f9e8;
+    background-color: #292c29;
     border: 1px solid #ffffe0;
-    color: #292c29;
+    color: #ffffe0;
 }
 
-.page-item:hover{
-    background-color: #000000;
+.page-link:hover{
+    background-color: #b1b1b1;
     color: #292c29;
 }
