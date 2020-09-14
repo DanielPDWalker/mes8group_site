@@ -1,16 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
     {% for featured_item in featured_items %}
-    <div class="col-md-6 col-lg-4 mb-4">
-        <div class="feature-display">
-            <h3>{{ featured_item.short_title }}</h3>
-            <img class="card-img-top" src="{{ featured_item.thumbnail.url }}">
-            <span>{{ featured_item.format_tags }}</span>
-            <div class="text-center">
-                <p> {{ featured_item.snippet }}</p>
-            </div>
-        </div>
-    </div>
+        {% include 'partials/_feature_post.html' %}
     {% endfor %}
 </div>
 {% endblock %}

@@ -20,8 +20,12 @@ class GeneralModel (models.Model):
     thumbnail = models.ImageField(upload_to='thumbnails/', default='default_thumbnail.jpg')
 
     tags = models.CharField(max_length=200)
+
+    frontpage_feature_bool = models.BooleanField(default=False)
     frontpage_feature_slot = models.IntegerField(blank=True, unique=True, null=True)
-    category_feature_slot = models.BooleanField(default=False)
+    
+    category_feature_bool = models.BooleanField(default=False)
+    category_feature_slot = models.IntegerField(blank=True, unique=True, null=True)
 
     is_published = models.BooleanField(default=False)
 
