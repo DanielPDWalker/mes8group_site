@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
-    {% for featured_item in featured_items %}
+    {% for post in posts %}
         {% include 'partials/_feature_post.html' %}
     {% endfor %}
 </div>

@@ -1,10 +1,11 @@
 <div class="container">
     <div class="feature-display">
-        <h2 class="general_post_title"><span class="general_post_date">{{ post.publish_date|date:"d/M" }}</span>{{ post.short_title }}</h2><span></span>
-        <span class="general_post_tags">{{ post.tags }}</span>
-        <br>
-        <img class="general_post_thumbnail" src="{{ post.thumbnail.url }}">
-        <p class="general_post_snippet"> {{ post.snippet|linebreaks }}</p>
+        <img class="feature_post_thumbnail" src="{{ post.thumbnail.url }}">
+        <h2 class="feature_post_title">{{ post.short_title }}</h2><span></span>
+        <span class="feature_post_tags">{{ post.tags }}</span>
+        <div class="feature_post_snippet"> {{ post.snippet|linebreaks }}</div>
     </div>
 </div>
+{% if forloop.last %}{% else %}
 <hr class="hr_post_splitter">
+{% endif %}
