@@ -7,4 +7,6 @@
         <p class="general_post_snippet"> {{ post.snippet|linebreaks }}</p>
     </div>
 </div>
+{% if forloop.last %}{% else %}
 <hr class="hr_post_splitter">
+{% endif %}
