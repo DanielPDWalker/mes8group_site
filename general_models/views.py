@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
-from models import GeneralModel
+from .models import GeneralModel
 
 def general_detail(request, post_slug):
     post = get_object_or_404(GeneralModel, slug=post_slug)
