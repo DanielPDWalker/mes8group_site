@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 
 from general_models.models import GeneralModel
@@ -15,7 +15,14 @@ def writing_home(request):
         'title': 'Writing',
         'posts': paged_posts
     }
+
     return render(request, 'writing/writing.html', context)
 
-def writing_post(request):
-    pass
+def writing_post_detail(request, post_slug):
+    post = get_object_or_404(GeneralModel, slug=post_slug)
+
+    context = {
+        'post': post
+    }
+
+    return render(request, 'general_post_detail.html', context)

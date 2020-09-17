@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+    <h2 class="detail_title">{{ post.title }}</h2>
+    <h5 class="detail_date">{{ post.date }}</h5>
+    <h6 class="detail_tags">Tags: {{ post.tags }}</h6>
+    <p class="detail_content">{{ post.content|safe|linebreaks }}</p>
+    <div class="back_button_div">
+        <input type="button" value="Back" class="back_button" onclick="history.back(-1)" />
+    </div>
+</div>
+{% endblock %}
