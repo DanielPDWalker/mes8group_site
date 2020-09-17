@@ -17,12 +17,3 @@ def writing_home(request):
     }
 
     return render(request, 'writing/writing.html', context)
-
-def writing_post_detail(request, post_slug):
-    post = get_object_or_404(GeneralModel, slug=post_slug)
-
-    context = {
-        'post': post
-    }
-
-    return render(request, 'general_post_detail.html', context)
