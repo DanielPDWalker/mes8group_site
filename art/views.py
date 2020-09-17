@@ -17,5 +17,5 @@ def art_home(request):
     }
     return render(request, 'art/art.html', context)
 
-def art_post(request):
+def art_post_detail(request):
     pass
