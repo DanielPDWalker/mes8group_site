@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
     <h1 class="detail_title">{{ post.title }}</h1>
-    <h5 class="detail_date">{{ post.publish_date|date:"d/M" }} - <span>{{ post.tags }}</span></h5>
+    <h5><span class="detail_date">{{ post.publish_date|date:"d/M" }}</span> - <span class="detail_tags">{{ post.tags }}</span></h5>
     <p class="detail_content">{{ post.content|safe|linebreaks }}</p>
     <div class="back_button_div">
         <input type="button" value="Back" class="back_button" onclick="history.back(-1)" />

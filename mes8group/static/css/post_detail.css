@@ -2,11 +2,12 @@ h1.detail_title{
     font-size: 56px;
     padding-top: 1rem;
     margin-bottom: 0;
-    color: #98f9e8;
+    text-decoration: underline;    
 }
 
-h5.detail_date{
+span.detail_date{
     padding-top: -0.5rem;
+    color: #98f9e8;
 }
 
 div.back_button_div{
