@@ -46,3 +46,12 @@ h2#title{
     background-color: #7e7e7e;
     clear: both;
 }
+
+a.post_link{
+    color: #98f9e8;
+}
+
+a.post_link:hover{
+    text-decoration: none;
+    color: #646262;
+}
