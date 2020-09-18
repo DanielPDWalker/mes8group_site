@@ -35,11 +35,10 @@ ul.navbar a:hover{
 
 li.disabled{
     text-decoration: line-through;
-    
 }
 
 li.disabled a{
-    color: #646262
+    color: #646262;
 }
 
 li.disabled a:hover{
