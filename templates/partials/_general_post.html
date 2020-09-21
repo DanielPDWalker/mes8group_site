@@ -1,9 +1,9 @@
 <div class="container">
     <div class="feature-display">
-        <h2 class="general_post_title"><span class="general_post_date">{{ post.publish_date|date:"d/M" }}</span><a href="{% url 'detail' post.slug %}">{{ post.short_title }}</h2></a>
+        <h2 class="general_post_title"><span class="general_post_date">{{ post.publish_date|date:"d/M" }}</span><a class="post_link" href="{% url 'detail' post.slug %}">{{ post.short_title }}</a></h2>
         <span class="general_post_tags">{{ post.tags }}</span>
         <br>
-        <img class="general_post_thumbnail" src="{{ post.thumbnail.url }}">
+        <a class="post_link" href="{% url 'detail' post.slug %}"><img class="general_post_thumbnail" src="{{ post.thumbnail.url }}"></a>
         <p class="general_post_snippet"> {{ post.snippet|linebreaks }}</p>
     </div>
 </div>
